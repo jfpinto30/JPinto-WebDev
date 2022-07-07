@@ -119,23 +119,8 @@
     </div>
 
  
-    
-   <!-- CAROUSEL / PROJECTS SECTION -->
-        <div id="workCarousel">
-
-            <!-- Left BUTTON -->
-                <button id="left-btn" class="carousel-btn is-hidden" type="button" aria-label="Left Button">
-                <img src="./Icon/Left.svg" alt="">
-                </button>
-           
-
-        <!-- CAROUSEL PROJECT 1 -->
-     <div class="carousel_track-container">
-         <ul class="carousel_track">
-             <li class="carousel_slide current-slide">
-                 <a class="project-link" href="https://jfpinto30.github.io/Get-Trend/" aria-label="Get Trend Website link">
-                     <div class="get-img"></div>
-                 </a>
+        <!-- PROJECTS  -->
+   <!--
                  <div class="carousel-content">
                  <h3>Get Trend</h3>
                  <p>Ecommerce Website. Get Trend project is a clothing company
@@ -144,11 +129,7 @@
                  </p>
                  <span>HTML, CSS, Javascript</span>
                  </div>
-             </li>
-             <li class="carousel_slide current-slide">
-                 <a class="project-link" href="#" aria-label="Dark Roast Cafe Website link">
-                     <div class="dark-img"></div>
-                 </a>
+            
                  <div class="carousel-content">
                  <h3>Dark Roast Cafe</h3>
                  <p>Ecommerce Website. Dark Roast Cafe is a made up coffee shop website, that 
@@ -157,52 +138,11 @@
                  </p>
                  <span>HTML, CSS, Javascript</span>
                  </div>
-             </li>
-             <li class="carousel_slide current-slide">
-                 <a class="project-link" href="#" aria-label="Get Trend Website link">
-                     <div class="#"></div>
-                 </a>
-                 <div class="carousel-content">
-                 <h3>COMING SOON</h3>
-                 <p>Project in process.
-                 </p>
-                 <span>HTML, CSS, Javascript</span>
-                 </div>
-             </li>
-             <li class="carousel_slide current-slide">
-                 <a class="project-link" href="#" aria-label="Get Trend Website link">
-                     <div class="#"></div>
-                 </a>
-                 <div class="carousel-content">
-                 <h3>COMING SOON</h3>
-                 <p>Project in process.
-                 </p>
-                 <span>HTML, CSS, Javascript</span>
-                 </div>
-             </li>
-             
-
-         </ul>
-
-     </div>
-
-        <!-- Right BUTTON -->
-            <button id="right-btn" class="carousel-btn" type="button" aria-label="Right Button">
-                <img src="./Icon/Right.svg" alt="">
-            </button>
-
-        <!-- Carousel NAV -->
-                <div class="carousel-nav">
-                    <button class="carousel_indicator current-slide" type="button" aria-label="Button indicator"></button>
-                    <button class="carousel_indicator" type="button" aria-label="Button indicator"></button>
-                    <button class="carousel_indicator" type="button" aria-label="Button indicator"></button>
-                    <button class="carousel_indicator" type="button" aria-label="Button indicator"></button>
-                </div>
-        
-        </div>
-    
+                -->
+              
 
 </section>
+
 
 
 
@@ -253,7 +193,7 @@
       </a>
       <div class="info"> 
         <h3><b>Javascript</b></h3>
-        <p> Functioning and productivity. </p> 
+        <p> Functioning and <br> productivity. </p> 
       </div>
 </div>
 
@@ -327,7 +267,6 @@
 
     
     <script src="./mainScript.js"></script>
-    <script src="./carousel.js"></script>
     <script src="./email.js"></script>
     
    
@@ -337,9 +276,9 @@
 
 function scrollFunction() {
   if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
-    document.getElementById("portfolio-emoji").style.width = "150px";
+    document.getElementById("portfolio-emoji").style.width = "100px";
   } else {
-    document.getElementById("portfolio-emoji").style.width = "250px";
+    document.getElementById("portfolio-emoji").style.width = "150px";
   }
 }
     </script>
