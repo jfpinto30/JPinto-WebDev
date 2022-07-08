@@ -208,16 +208,10 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 15px rgba(0,0,0,.2);
   z-index: 4;
-  width: 4%;
+  width: 4rem;
   
 }
 
-.menu {
-  height: 0px;
-  width: 100%;
-  overflow: hidden;
-  transition: 0.5s;
-}
 .nav:hover {
   background: rgb(240, 251, 255);
 }
@@ -227,65 +221,49 @@ body {
   width: 500%;
 }
 
-.menu li {
+
+.menu {
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu ul {
+
+  width: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height:110px;
-  list-style: none;
-  margin-bottom:5px;
-  padding:10px;
-  font-family: "Roboto",sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0em;
-  text-align: center;
-  text-decoration: none;
+  align-items: center;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 50%;
   transition: all 0.2s ease-in-out;
 }
-.menu li:hover{
+
+.icon-list:hover{
   transform: scale(1.1);
   color: #4DC1F0;
 }
-.menu li a {
-  color:rgba(68, 83, 89, 1);
-  text-align: center;
-  transition: 0.5s;
+.about-icon{
+width: 90%;
+
 }
-#icon-about {
-  background-image: url("./Icon/About-me\ icon.svg");
+
+.icon-img {
   background-repeat: no-repeat;
-  background-size: 40px;
+  background-size: 15px;
   margin-left:5px;
-  width: 100%;
-  height: 100%;
+ 
 }
-#icon-work {
-  background-image: url("./Icon/Work.svg");
-  background-repeat: no-repeat;
-  background-size: 40px;
-  margin-left:5px;
-  width: 100%;
-  height: 100%;
-}
-#icon-skills {
-  background-image: url("./Icon/Skills.svg");
-  background-repeat: no-repeat;
-  background-size: 40px;
-  margin-left:5px;
-  width: 100%;
-  height: 100%;
-}
-#icon-contact {
-  background-image: url("./Icon/Contact.svg");
-  background-repeat: no-repeat;
-  background-size: 40px;
-  margin-left:5px;
-  width: 100%;
-  height: 100%;
-}
+
 
 .nav input {
   position: relative;
@@ -357,12 +335,14 @@ header {
 
 .word-container{
   margin-bottom: 20%;
+  
 }
 
 .word {
   font-family: 'Antono', sans-serif;
   perspective: 1000px; 
   font-weight: 900;
+
 }
 
 .word span {
@@ -370,7 +350,8 @@ header {
   display: inline-block;
   font-size: 170px;
   -moz-user: none;
-  
+  color: #fff;
+
 }
 
 /* HEADER WORD PLAY */
@@ -706,7 +687,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom:80px;
   width: 100%;
 }
@@ -717,12 +698,12 @@ p {
   align-items: center;
   justify-content: center;
   margin: 20px;
+  padding:45px;
+  background: rgb(239, 239, 239);
+  border-radius: 10px;
 }
 
-.project-container2 {
-  width: 380px;
-  margin: 10px;
-}
+
 
 
 .project-link img{
@@ -730,52 +711,44 @@ width: 350px;
 border-radius: 10px;
 }
 
-.project-container2 img {
-  width: 350px;
-  border-radius: 10px; 
-}
 
 .projects-info {
   width: 350px;
   height: 200px;
   margin: 10px;
-  padding: 5px; 
+  padding-top: 5px; 
 }
-.project-container2 .projects-info {
+.projects-info2 {
   width: 350px;
-  height: 250px;
+  height: 200px;
   margin: 10px;
-  padding: 5px; 
+  padding-top: 45px; 
 }
 
 
-.projects-info h3{
+
+.projects-info, h3, p, span {
   font-family: 'Roboto',sans-serif;
-  font-weight: 600;
   letter-spacing: 1px;
   color: rgba(63, 63, 63);
+  text-align: left;
+}
+.projects-info, h3, p, span {
   font-size: 20px;
+  font-weight: 600;
 }
 
 .projects-info p {
-  font-family: 'Roboto',sans-serif;
   font-weight: 400;
-  letter-spacing: 1px;
-  color:rgba(63, 63, 63, 1);
   font-size: 15px;
-  text-align: left;
-  padding-top: 6px;
 }
 
 .projects-info span{
-  font-family: Roboto;
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 1px;
-  text-align: left;
   color:rgb(149, 149, 149);
-  padding-top: 5px;
 }
+
 
 
 /* SECTION # SKILLS */
@@ -838,10 +811,10 @@ border-radius: 10px;
 
 .percentage {
   position: absolute;
-  top:20px;
-  left: 5px;
+  top:25px;
+  left:10px;
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   color:white;
   z-index: 1;
@@ -855,6 +828,7 @@ border-radius: 10px;
   font-family: "Roboto",sans-serif;
   top: 100px;
   left: 0px;
+  font-weight: 400;
 }
 
 /* HTML LIQUID */
@@ -1008,20 +982,7 @@ a .liquid-3::before {
   background: rgba(221, 235, 241, .5);
   animation: animate 10s linear infinite;
 }
-/*
-.thermomater:hover .liquid{
-  top: 50px;
-}
-.thermomater:hover .liquid-1{
-  top: 35px;
-}
-.thermomater:hover .liquid-2{
-  top: -15px;
-}
-.thermomater:hover .liquid-3{
-  top: -25px;
-}
-*/
+
 
 
 @keyframes animate {
