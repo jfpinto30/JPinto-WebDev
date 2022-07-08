@@ -200,7 +200,7 @@ body {
 .nav {
   position: fixed;
   top:30px;
-  left: 87%;
+  left: 80%;
   background: rgba(210, 242, 255, 1);
   padding: 24px;
   transition: 0.5s;
@@ -224,7 +224,7 @@ body {
 
 .menu {
   height: 0px;
-  width: 50px;
+  width: 50%;
   overflow: hidden;
   transition: 0.5s;
 }
