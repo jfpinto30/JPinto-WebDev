@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JPinto-WebDev</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/about-me.css">
+    <link rel="stylesheet" href="./CSS/work.css">
+    <link rel="stylesheet" href="./CSS/skills.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
 
 </head>
 <body>
@@ -18,24 +24,13 @@
           <span></span>
           <div class="menu">
         <ul>
-            <li class="icon-list" ><a href="#about" class="icon-img" aria-label="About me icon selection">
-                <img src="./Icon/About-me icon.svg" class="about-icon" alt="About me icon"/>
-            </a>
+            <li class="icon-list" ><a href="#about" id="about-icon"  aria-label="About me icon"></a>
         </li>
-          
-            <li class="icon-list"><a href="#work" class="icon-img" aria-label="My work icon selection">
-                <img src="./Icon/Work.svg"  alt="Work icon"/>
-            </a>            
+            <li class="icon-list"><a href="#work" id="work-icon"  aria-label="My work icon"></a>            
         </li>
-
-            <li class="icon-list"><a href="#skill" class="icon-img" aria-label="My skills icon selection">
-                <img src="./Icon/Skills.svg"  alt="Skills icon"/>
-            </a>            
+            <li class="icon-list"><a href="#skill" id="skill-icon"  aria-label="My skills icon"></a>            
         </li>
-
-            <li class="icon-list"><a href="#contact" class="icon-img" aria-label="Contact me icon selection">
-                <img src="./Icon/Contact.svg" alt="Contact icon"/>
-            </a>            
+            <li class="icon-list"><a href="#contact" id="contact-icon"  aria-label="Contact me icon"></a>            
         </li>
         
         </ul>
@@ -63,7 +58,7 @@
   </div>
 
     <div class="fixed-content">
-      <div class="fixed">Hey I'm Jessica, and I'm a Front-End Engineer</div>
+        <p>Hey I'm Jessica, and I'm a Front-End Engineer</p>
     </div>
     </header>
 
@@ -94,8 +89,10 @@
 <div id="about-me">
    
     <div class="container-about">
-        <div class="about-h1"><h1><strong>Coder, Programer, Illustrator</strong></h1></div>
-        <div class="about-p"><p>Hello, my name is Jessica Pinto. 
+        <div class="about-h1">
+            <h1><strong>Coder, Programer, Illustrator</strong></h1></div>
+        <div class="about-p">
+            <p>Hello, my name is Jessica Pinto. 
             Im a certified self taught Front-End-Engineer, and I'm 
             loving every minute of it! I love to learn and I'm super 
             passionate about building and solving complex puzzles with code. 
@@ -301,8 +298,10 @@
 
 
     
-    <script src="./mainScript.js"></script>
-    <script src="./email.js"></script>
+    <script src="./JS/mainScript.js"></script>
+    <script src="./JS/email.js"></script>
+    <script src="./JS/navOnScroll.js"></script>
+    
     
    
 

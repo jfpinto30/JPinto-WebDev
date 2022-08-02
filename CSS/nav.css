@@ -1,0 +1,173 @@
+@media all and (min-width:680px)and (max-width:1400px) {
+  
+}
+
+@media all and (min-width:425px) and (max-width:680px) {
+div.nav{
+background-color:transparent;
+box-shadow: none;
+}
+div.menu, .nav input {
+  border-radius: 100px;
+}
+
+div.nav span {
+  background-color:white;
+}
+
+
+}
+
+
+
+
+
+/* NAVAGATION */
+ 
+
+.nav,.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+  .nav {
+    position: fixed;
+    top:30px;
+    left: 75%;
+    padding: 24px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    z-index: 10;
+    width: 4rem;
+    transition: 200ms ease-in-out;
+    background: rgba(210, 242, 255, 1);
+ 
+  }
+  
+  .changeColor {
+    background: rgb(184, 231, 250);
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+
+  }
+  
+  
+  .nav input:checked ~ .menu {
+    height:400px;
+    width: 500%;
+    background: rgba(210, 242, 255, 1);
+
+  }
+
+  .menu {
+    height:0px;
+    width: 40%;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .menu ul {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    transition: all 0.2s ease-in-out;
+    margin: 5px;
+    
+  }
+  
+  .icon-list:hover{
+    transform: scale(1.1);
+    color: #4DC1F0;
+  }
+  
+  
+ 
+  #about-icon {
+  background-image: url("./icon/About-me\ icon.svg");
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 40px;
+  }
+  #work-icon{
+  background-image: url("./icon/Work.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 49px;
+  }
+  #skill-icon{
+  background-image: url("./icon/Skills.svg");
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 40px;
+  }
+  #contact-icon{
+  background-image: url("./icon/Contact.svg");
+  background-repeat: no-repeat;  
+  width: 40px;
+  height: 40px;
+  }
+
+
+
+ 
+  .nav input {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    
+  }
+  
+  .nav span {
+    position: absolute;
+    top:42px;
+    width: 20px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: rgba(77, 193, 240, 1);
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+ 
+  .nav input:checked ~ span {
+    background-color: #f974a1;
+    
+  }
+  
+  
+  .nav span:nth-child(2) {
+    transform: translateY(-8px);
+    
+  }
+  
+  .nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+    
+  }
+  .nav span:nth-child(3) {
+    transform: translateY(8px);
+    
+  }
+  
+  .nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+    
+  }
+  

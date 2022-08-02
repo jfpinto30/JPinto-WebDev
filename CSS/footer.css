@@ -1,0 +1,152 @@
+@media all and (min-width:680px)and (max-width:1400px) {
+
+}
+@media all and (min-width:425px) and (max-width:680px) {
+  
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+    background: rgba(9, 148, 204, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+    top: 0;
+    left: 0;
+  }
+  
+  .emoji-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  
+  .container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  #contact-emoji {
+    background-image: url("./emoji/Jeca\ Emoji\ contact.svg");
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+    margin-right: 60%;
+  }
+  
+  .contactMe {
+    position:absolute;
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 25px;
+    width:30%;
+  }
+  
+  .form-group {
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    color: rgba(189, 189, 189, 1);
+    border-radius: 14px;
+    padding: 7px;
+    box-shadow: 0px 0px 20px #00000010;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding:5px;
+    border: 1px solid rgba (128, 128, 128, 0.199);
+    margin-top:5px;
+    border: none;
+  }
+  
+  #firstName {
+    vertical-align: middle;
+  }
+  
+  textarea {
+    resize: vertical;
+    border-radius: 14px;
+  }
+  
+  button[type="submit"]{
+    width: 100%;
+    border:1px solid #fff;
+    outline: none;
+    margin-top: 20px;
+    padding:20px;
+    font-size: 35px;
+    font-family: "Robot",sans-serif;
+    letter-spacing: 1px;
+    border-radius: 14px;
+    background-color: rgba(9, 148, 204, 1);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease border;
+  }
+  
+  button[type="submit"]:hover {
+    border:1px solid rgb(207, 204, 204); 
+  }
+  
+  #status {
+    width: 250px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 14px;
+    font-family: "Robot",sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  #status.sent {
+  background-color: #fff;
+  color: rgb(9, 204, 123);
+  animation: status 4s ease forwards;
+  }
+  
+  #status.error {
+  background-color: #fff;
+  color: rgb(216, 46, 46);
+  animation: status 4s ease forwards;
+  }
+  
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }

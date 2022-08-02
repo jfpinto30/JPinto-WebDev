@@ -1,0 +1,172 @@
+  @media all and (min-width:680px)and (max-width:1400px) {
+    .container-about h1 {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+    .container-about p {
+      font-size: 20px;
+    } 
+  }
+
+  @media all and (min-width:425px) and (max-width:680px) {
+
+  .container-about h1 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .container-about p {
+    font-size: 15px;
+  }
+
+  }
+
+
+/* SECTION 1 ABOUT ME */
+
+section {
+    background-color: #ddebf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+#portfolio-emoji {
+  background-image: url("./emoji/Jeca\ Emoji\ 1.svg");
+  background-repeat: no-repeat;
+  position:absolute;
+  width: 280px;
+  height: 280px;
+  margin: auto;
+  padding:auto;
+  top:85%;
+  padding: 50px 10px; 
+  transition: 0.2s; 
+  
+}
+
+.head-about,.head-work,.head-skills {
+  color: rgba(9, 148, 204, 1);
+  font-family: "Roboto",sans-serif;
+  font-size: 25px;
+  margin:5%;
+  padding: 10px;
+ 
+}
+.head-about {
+  margin-top: 15%;
+}
+
+#about-me {
+  width: 70%;
+  margin-top: 10px;
+  padding: 20px;
+  color: rgba(63, 63, 63, 1);
+  letter-spacing: 1px;
+  padding: 7px;  
+
+  
+}
+
+
+.about-h1 h1 {
+  font-family: "Roboto",sans-serif;
+font-size: 35px;
+font-style: normal;
+font-weight: 500;
+line-height: 41px;
+letter-spacing: 0em;
+text-align: center;
+padding: 10px;
+}
+
+.about-p p {
+  font-family: "Roboto",sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px; 
+}
+
+/* LINK TO ICONS */
+.linkTo-icons-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  margin-top: 10px;
+}
+
+.icon {
+  padding: 10px;
+  margin:20px;
+  width: 70px;
+  height: 70px;
+  transition: all .2s ease-in-out;
+}
+.icon:hover{
+  transform: scale(1.1);
+}
+
+#twitter {
+  background-image: url("./icon/Twitter.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+#linkedin {
+  background-image: url("./icon/LinkedIn.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+#github {
+  background-image: url("./icon/GitHub.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+
+/* RESUME BUTTON */
+
+
+.resume-btn {
+  width: 250px;
+  height: 70px;
+  border: none;
+  outline: none;
+  margin:10px;
+  margin-bottom: 15%;
+  padding: 10px;
+  font-size: 25px;
+  font-family: "Robot",sans-serif;
+  font-weight: 550;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  background-color: rgba(9, 148, 204, 1);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.resume-btn, a {
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.resume-btn:hover {
+  background-color: rgb(5, 123, 170);
+}

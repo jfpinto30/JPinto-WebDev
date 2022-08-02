@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+@media only screen and (max-width: 1200px){
+  
+}
+@media only screen and (max-width: 780px){
+ 
+}
+@media only screen and (max-width: 525px){
+  #contact-emoji {
+    width: 50px;
+  }
+}
+
+
+
+
+
+/* Other styles BODY */
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior:smooth;
+  width: 100%;
+  top:0;
+  left:0;
+ 
+}
+
+body {
+    background: linear-gradient(248.03deg, #50CCFE 17.29%, #0994CC 32.47%);
+    top:0;
+    left:0;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
