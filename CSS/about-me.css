@@ -1,4 +1,4 @@
-  @media all and (min-width:680px)and (max-width:1400px) {
+  @media all and (min-width:780px)and (max-width:1400px) {
     .container-about h1 {
       font-size: 30px;
       font-weight: bolder;
@@ -8,7 +8,7 @@
     } 
   }
 
-  @media all and (min-width:425px) and (max-width:680px) {
+  @media all and (min-width:325px) and (max-width:780px) {
 
   .container-about h1 {
     font-size: 20px;

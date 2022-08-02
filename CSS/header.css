@@ -1,5 +1,5 @@
 
-@media all and (min-width:680px)and (max-width:1400px) {
+@media all and (min-width:780px)and (max-width:1400px) {
   .word span:nth-child(1){
     font-size: 150px;
   }
@@ -28,7 +28,7 @@
 
 }
 
-@media all and (min-width:425px) and (max-width:680px) {
+@media all and (min-width:325px) and (max-width:780px) {
 
   .word span:nth-child(1){
     font-size: 60px;
