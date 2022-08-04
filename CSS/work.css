@@ -1,5 +1,18 @@
 @media all and (min-width:780px)and (max-width:1400px) {
-
+  .projects-container {
+    width: 300px;
+    max-height: 600px;
+  }
+  .projects-image-conainer{
+    max-width: 350px;
+  }
+  .project-link img{
+    max-width: 250px;
+    margin-top: -30%;
+  }
+  .projects-info{
+    max-width: 250px;
+  }
 }
 @media all and (min-width:325px) and (max-width:780px) {
   .projects-container {

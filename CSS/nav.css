@@ -1,8 +1,18 @@
-@media all and (min-width:680px)and (max-width:1400px) {
-  
+@media all and (min-width:780px)and (max-width:1400px) {
+  div.nav{
+    background-color:transparent;
+    box-shadow: none;
+    }
+    div.menu, .nav input {
+      border-radius: 100px;
+    }
+    
+    div.nav span {
+      background-color:rgb(0, 103, 143);
+    } 
 }
 
-@media all and (min-width:425px) and (max-width:680px) {
+@media all and (min-width:325px) and (max-width:780px) {
 div.nav{
 background-color:transparent;
 box-shadow: none;
@@ -12,7 +22,8 @@ div.menu, .nav input {
 }
 
 div.nav span {
-  background-color:white;
+  background-color:rgb(0, 103, 143);
+  
 }
 
 

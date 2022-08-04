@@ -2,7 +2,7 @@
 @media all and (min-width:780px)and (max-width:1400px) {
 
 }
-@media all and (min-width:425px) and (max-width:780px) {
+@media all and (min-width:325px) and (max-width:780px) {
   
 }
 
@@ -197,6 +197,7 @@
     border-radius: 45%;
     background: rgb(168, 179, 184);
     animation: animate 5s linear infinite;
+    
   }
   /* CSS */
   .liquid-1::before {
