@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
 
-@media only screen and (max-width: 1200px){
-  
-}
-@media only screen and (max-width: 780px){
- 
-}
+
 @media only screen and (max-width: 525px){
   #contact-emoji {
     width: 50px;
