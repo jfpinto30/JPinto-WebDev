@@ -25,7 +25,7 @@
   div#portfolio-emoji{
     width: 180px;
     height: 180px; 
-    top: 90%;
+    top: 60%;
   }
 
   }
@@ -51,18 +51,26 @@ section {
 
 
 #portfolio-emoji {
-  background-image: url("./emoji/Jeca\ Emoji\ 1.svg");
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100%;
   position:absolute;
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   margin: auto;
   padding:auto;
   top:85%;
   padding: 50px 10px; 
-  transition: 0.2s; 
+  /* transition: 0.2s; */ 
   
 }
+
+.motion-emoji {
+width: 130%;
+}
+
 
 .head-about,.head-work,.head-skills {
   color: rgba(9, 148, 204, 1);

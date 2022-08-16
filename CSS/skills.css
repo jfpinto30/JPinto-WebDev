@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     margin: 1%;
   }
-  
+ 
   
   .thermomater {
     position: relative;
@@ -64,7 +64,6 @@
     height: 100px;
     overflow: hidden;
     border-radius:50%;
-    
   }
   
   .percentage {
@@ -100,8 +99,6 @@
     background: rgba(204, 79, 9, 1);
     box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
     transition: .5s;
-    
-  
   }
   /* CSS LIQUID */
   
@@ -179,7 +176,7 @@
     left: 50px;
     transform: translate(-50%, -75%);
   }
-  
+ 
   /* REACT */
   a .liquid-3::after,
   a .liquid-3::before {
@@ -195,26 +192,26 @@
   /* HTML */
   .liquid::before {
     border-radius: 45%;
-    background: rgb(168, 179, 184);
+    background:rgb(221, 235, 241);
     animation: animate 5s linear infinite;
     
   }
   /* CSS */
   .liquid-1::before {
     border-radius: 45%;
-    background: rgb(168, 179, 184);
+    background:rgb(221, 235, 241);
     animation: animate 5s linear infinite;
   }
   /* JAVA */
   .liquid-2::before {
     border-radius: 45%;
-    background: rgb(168, 179, 184);
+    background:rgb(221, 235, 241);
     animation: animate 5s linear infinite;
   }
   /* REACT */
   .liquid-3::before {
     border-radius: 45%;
-    background: rgb(168, 179, 184);
+    background:rgb(221, 235, 241);
     animation: animate 5s linear infinite;
   }
   /* HTML */
