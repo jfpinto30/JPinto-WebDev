@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="./CSS/skills.css">
     <link rel="stylesheet" href="./CSS/footer.css">
 
+    <!-- PAGE ANIMATION FOR PROJECT SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
 
@@ -146,74 +149,93 @@
     </div>
 
     <!-- PROJECTS -->
-    <div class="projects-body">
-  
-        <div class="projects-container">
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <div class="projects-image-conainer">
                 <a href="https://jfpinto30.github.io/Trend/" class="project-link" aria-label="Get-Trend Project link">
                     <img src="./Img/Get_trend.jpg" alt="Get Trend link project website" />
                </a>
-            </div>
+            
             <div class="projects-info">
             <h3>Get Trend</h3>
-            <p>Ecommerce Website. Get Trend project is a clothing company
-                that sell latest trends and recreate brand new clothing with
-                second hand materials and fabrics for customers.
+            <p>Ecommerce project for a custom made fashion company.
             </p>
             <span>HTML, CSS, Javascript</span>
+            </div>
         </div>
-    </div>
+          </div>
 
-           <div class="projects-container">
+
+          <div class="swiper-slide">
             <div class="projects-image-conainer">
 
                 <a href="https://jfpinto30.github.io/Dark-Roast-Cafe/" class="project-link" aria-label="Dark-Roast-Cafe Project link">
                     <img src="./Img/dark roast .jpg" alt="Dark-Roast-Cafe link project website" />
                </a>
-            </div>
+            
             <div class="projects-info">
             <h3>Dark Roast Cafe</h3>
-            <p>Ecommerce Website. A coffee shop website project, that 
-                provides customers with a choice of trying different types of coffee all over
-                the world. Provides ordering online and shipping right to your door.
+            <p>Ecommerce Website. A coffee shop website project for delivery.
             </p>
             <span>HTML, CSS, Javascript</span>
+            </div>
         </div>
-        </div>
-           <div class="projects-container">
+          </div>
+
+
+          <div class="swiper-slide">
             <div class="projects-image-conainer">
 
                 <a href="https://jfpinto30.github.io/LAmountains/" class="project-link" aria-label="Dark-Roast-Cafe Project link">
                     <img src="./Img/LAmountains.jpg" alt="LA mountains link" />
                </a>
-            </div>
+            
             <div class="projects-info">
             <h3>LA Mountains</h3>
             <p> A tourism Website project. For more information about 
-                hiking, tours, and schedules. Away for users to get in 
-                and setting up tours.
+                hiking, tours, and schedules.
             </p>
             <span>HTML, CSS, Javascript</span>
+            </div>
         </div>
-        </div>
+          </div>
 
-           <div class="projects-container">
+
+
+          <div class="swiper-slide">
             <div class="projects-image-conainer">
 
                 <a href="https://jfpinto30.github.io/Let-s-Play/" class="project-link" aria-label="Let's play Project link">
                     <img src="./Img/LetsPlay.jpg" alt="Let's play link project website" />
                </a>
-            </div>
+            
             <div class="projects-info">
             <h3>Let's Play</h3>
-            <p>Interactive games. Using Javascript I built a fully functional drawing canvas
+            <p>Interactive games. Fully functional drawing canvas
                 and a Match game with interactive cards to flip over.
             </p>
             <span>HTML, CSS, Javascript</span>
+            </div>
         </div>
-        </div>
- </div>
+          </div>
 
+
+          <div class="swiper-slide">Slide 5</div>
+
+          <!--
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          -->
+
+        </div>
+      </div>
+
+
+    
 
 
         
@@ -348,6 +370,26 @@
     <script src="./JS/mainScript.js"></script>
     <script src="./JS/email.js"></script>
     <script src="./JS/navOnScroll.js"></script>
+
+
+
+
+<!-- Swiper JS WORK SECTION -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+  });
+</script>
+
+
+
+
+
+
     
     <!--SCROLL EFFECT FOR VECTOR PORTFOLIO EMOJI-->
   <!--
