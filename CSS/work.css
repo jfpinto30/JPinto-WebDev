@@ -1,4 +1,8 @@
-
+@media all and (min-width:1400px) and (max-width:1700px){
+  div.projects-info{
+    max-width: 290px;
+  }
+}
 @media all and (min-width:780px)and (max-width:1400px) {
  div.projects-info {
   max-width: 270px;
@@ -70,24 +74,24 @@
     }
 
     .swiper-slide:nth-child(1n) {
-      background-color: rgb(0, 140, 255);
+      background-color:rgb(0, 103, 143);
       
     }
 
     .swiper-slide:nth-child(2n) {
-      background-color: rgb(10, 184, 111);
+      background: rgb(184, 231, 250);
     }
 
     .swiper-slide:nth-child(3n) {
-      background-color: rgb(211, 122, 7);
+      background-color: #4DC1F0;
     }
 
     .swiper-slide:nth-child(4n) {
-      background: rgba(177, 9, 204, 1);
+      background-color:rgb(0, 103, 143);
     }
 
     .swiper-slide:nth-child(5n) {
-      background-color: rgb(142, 195, 17);
+      background: rgb(184, 231, 250);
     }
     
 /*
@@ -159,7 +163,7 @@
    
     .projects-info p {
       font-size: 15px;
-      color: rgba(255, 255, 255, 0.749);
+      color: rgb(255, 255, 255);
   
     }
    
