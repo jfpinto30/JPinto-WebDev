@@ -6,14 +6,15 @@
   justify-content: center;
   background-color: white;
   border-radius: 100%;
-  width: 180px;
-  height: 180px;
-  top:8%;
+  width: 140px;
+  height: 140px;
 }
 @media (max-width:780px){
   #portfolio-emoji{
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
+    top:30%;
+    position: absolute;
   }
 }
 
@@ -22,7 +23,7 @@ width: 9rem;
 }
 @media (max-width:780px){
   img.motion-emoji{
-    width: 7rem;
+    width: 6rem;
     
   }
 }
@@ -51,7 +52,7 @@ width: 9rem;
 }
 @media (max-width: 800px) {
   .solid {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 }
 
@@ -75,18 +76,8 @@ svg {
 .Dev{
   color: #2BE29C;
 }
-.solid-par{
-  color: #c3c3c3;
- font-family: 'Roboto';
- font-weight: 200;
- letter-spacing: 5px;
- font-size: 20px;
-}
-@media (max-width: 767px) {
-  .solid{
-    font-size:5rem;
-  }
-}
+
+
 
 .codepen {
   position: absolute;
@@ -99,10 +90,19 @@ svg {
   font-size: 1rem;
 }
 
-
 .codepen:last-of-type {
   right: 0;
   left: unset;
+}
+@media (max-width: 767px) {
+  .codepen{
+    font-size:13px;
+  }
+}
+@media (max-width: 380px) {
+  .codepen{
+    font-size:11px;
+  }
 }
 
 
@@ -134,13 +134,18 @@ svg {
 }
 
 
-
 .text-par {
   color: #c3c3c3;
  font-family: 'Roboto';
  font-weight: 200;
  letter-spacing: 5px;
  font-size: 20px;
+ text-align: center;
+}
+@media (max-width: 767px) {
+  div.text-par{
+    font-size:1rem;
+  }
 }
 .dud {
   color: #757575;
