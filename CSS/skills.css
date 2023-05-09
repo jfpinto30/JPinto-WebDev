@@ -12,8 +12,8 @@
 /* SECTION # SKILLS */
 
 .sect-3 {
-    background:rgb(221, 235, 241);
-    display: flex;
+  background-color: #ffffff;
+  display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -26,231 +26,136 @@
   }
   
   
-  .head-skills {
-    padding-top: 5%;
-    margin:5%;
-    color: rgba(9, 148, 204, 1);
+  main {
+    padding: 10vw 0;
   }
-  
-  
-  .thermomater-body {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%; 
-    height: 100%;
-    margin-bottom: 10%;
+  .colorslide{
+    margin: 10%;
   }
-  
-  
-  .thermomater-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 1%;
+  .inner {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
   }
- 
-  
-  .thermomater {
-    position: relative;
-    margin: 10px;
-    padding: 20px 50px;
+
+  .inner li {
+    margin: 10vw 0;
+    text-align: left;
+  }
+  .inner p {
+    display: block;
+    color: #0e0e0e;
+    font-family: 'Roboto';
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  @media (max-width: 767px) {
+    .inner p {
+      font-size: 15px;
+    }
+  }
+  p + p {
+    margin-top: 10px;
+  }
+  li:first-child {
+    margin-top: 0;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+  li:nth-child(even) {
+    text-align: right;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
     text-decoration: none;
-    text-transform: uppercase;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius:50%;
   }
-  
-  .percentage {
+  [data-reveal="content"] {
+    display: inline-block;
+    position: relative;
+  }
+  [data-reveal="cover"] {
     position: absolute;
-    top:25px;
-    left:10px;
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color:white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
     z-index: 1;
   }
-  
-  .info {
-    display:block;
-    margin:10px;
-    padding: 10px;
-    text-align: center;
-    font-family: "Roboto",sans-serif;
-    top: 100px;
-    left: 0px;
-    font-weight: 400;
+  [data-reveal="text"] {
+    opacity: 0;
   }
-  
-  /* HTML LIQUID */
-  
-  .thermomater .liquid {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: rgba(204, 79, 9, 1);
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-    transition: .5s;
+  [data-js="reveal"].loaded [data-reveal="cover"] {
+    -webkit-animation: reveal-cover 1.5s ease-in-out;
+            animation: reveal-cover 1.5s ease-in-out;
   }
-  /* CSS LIQUID */
-  
-  .thermomater .liquid-1 {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: rgba(9, 204, 145, 1);
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-    transition: .5s;
+  [data-js="reveal"].loaded [data-reveal="text"] {
+    opacity: 1;
+    -webkit-animation: reveal-text 1.5s ease-in-out;
+            animation: reveal-text 1.5s ease-in-out;
   }
-  
-  
-  /* JAVA LIQUID */
-  
-  .thermomater .liquid-2 {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background:rgba(204, 126, 9, 1);
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-    transition: .5s;
-  }
-  
-  
-  /* REACT LIQUID */
-  
-  .thermomater .liquid-3 {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: rgba(177, 9, 204, 1);
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-    transition: .5s;
-  }
-  
-  /* HTML LIQUID */
-  a .liquid::after,
-  a .liquid::before {
-    content: '';
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    transform: translate(-50%, -75%);
-    
-  }
-  /* CSS */
-  a .liquid-1::after,
-  a .liquid-1::before {
-    content: '';
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    transform: translate(-50%, -75%);
-  }
-  
-  /* JAVA */
-  a .liquid-2::after,
-  a .liquid-2::before {
-    content: '';
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    transform: translate(-50%, -75%);
-  }
- 
-  /* REACT */
-  a .liquid-3::after,
-  a .liquid-3::before {
-    content: '';
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    transform: translate(-50%, -75%);
-  }
-  
-  /* HTML */
-  .liquid::before {
-    border-radius: 45%;
-    background:rgb(221, 235, 241);
-    animation: animate 5s linear infinite;
-    
-  }
-  /* CSS */
-  .liquid-1::before {
-    border-radius: 45%;
-    background:rgb(221, 235, 241);
-    animation: animate 5s linear infinite;
-  }
-  /* JAVA */
-  .liquid-2::before {
-    border-radius: 45%;
-    background:rgb(221, 235, 241);
-    animation: animate 5s linear infinite;
-  }
-  /* REACT */
-  .liquid-3::before {
-    border-radius: 45%;
-    background:rgb(221, 235, 241);
-    animation: animate 5s linear infinite;
-  }
-  /* HTML */
-   .liquid::after {
-    border-radius: 40%;
-    background: rgba(221, 235, 241, .5);
-    animation: animate 10s linear infinite;
-  }
-  /* CSS */
-   .liquid-1::after {
-    border-radius: 40%;
-    background: rgba(221, 235, 241, .5);
-    animation: animate 10s linear infinite;
-  }
-  /* JAVA */
-   .liquid-2::after {
-    border-radius: 40%;
-    background: rgba(221, 235, 241, .5);
-    animation: animate 10s linear infinite;
-  }
-  /* REACT */
-   .liquid-3::after {
-    border-radius: 40%;
-    background: rgba(221, 235, 241, .5);
-    animation: animate 10s linear infinite;
-  }
-  
-  
-  
-  @keyframes animate {
+  @-webkit-keyframes reveal-cover {
     0% {
-      transform: translate(-50%, -75%) rotate(0deg);
+      width: 0;
+      left: 0;
+    }
+    44% {
+      width: 100%;
+      left: 0;
+    }
+    54% {
+      width: 100%;
+      left: 0;
     }
     100% {
-      transform: translate(-50%, -75%) rotate(360deg);
+      width: 0;
+      left: 100%;
     }
   }
-
-
+  @keyframes reveal-cover {
+    0% {
+      width: 0;
+      left: 0;
+    }
+    44% {
+      width: 100%;
+      left: 0;
+    }
+    54% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes reveal-text {
+    0% {
+      opacity: 0;
+    }
+    44% {
+      opacity: 0;
+    }
+    54% {
+      opacity: 1;
+    }
+  }
+  @keyframes reveal-text {
+    0% {
+      opacity: 0;
+    }
+    44% {
+      opacity: 0;
+    }
+    54% {
+      opacity: 1;
+    }
+  }
+  
 
 
 

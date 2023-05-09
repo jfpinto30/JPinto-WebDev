@@ -27,57 +27,53 @@
     <link rel="stylesheet" href="./CSS/footer.css">
 
     <!-- PAGE ANIMATION FOR PROJECT SECTION -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
 
 </head>
 <body>
 
-    <!-- NAVAGATION -->
 
-    <div class="nav">
-        <input type="checkbox" aria-label="Navagation">
-          <span></span>
-          <span></span>
-          <div class="menu">
-        <ul>
-            <li class="icon-list" ><a href="#about" id="about-icon"  aria-label="About me icon"></a>
-        </li>
-            <li class="icon-list"><a href="#work" id="work-icon"  aria-label="My work icon"></a>            
-        </li>
-            <li class="icon-list"><a href="#skill" id="skill-icon"  aria-label="My skills icon"></a>            
-        </li>
-            <li class="icon-list"><a href="#contact" id="contact-icon"  aria-label="Contact me icon"></a>            
-        </li>
-        
-        </ul>
-          </div>
-    </div>
   
+ <div id="banner">
+
+<!-- NAVAGATION -->
+  <div class="header-nav">
+    <img class="activator" id="activator" src="//s.svgbox.net/hero-outline.svg?fill=fff#menu-alt-1" alt="menu">
+    <nav class="navIconList">
+       
+            <a class="a-icon" href="#banner"><img src="./icons/home.svg" alt="home"></a>
+            <a class="a-icon" href="#about"><img src="./icons/about.svg"alt="about"></a>
+            <a class="a-icon" href="#work"><img src="./icons/work.svg" alt="work"></a>
+            <a class="a-icon" href="#skill"><img src="./icons/skill.svg" alt="skills"></a>
+            <a class="a-icon" href="#contact"><img src="./icons/email.svg" alt="email"></a>
+       
+    </nav>
+</div>
 
 
-   <!-- HEADER  -->
-<div id="banner">
 
-    <header>
- <div class="word-container">  
-    <div class="word">
-      <span>J</span>
-      <span>E</span>
-      <span>S</span>
-      <span>S</span>
-      <span>_</span>
-      <span>D</span>
-      <span>E</span>
-      <span>V</span>
+
+      <!-- PORTFOLIO FACE EMOJI -->
+      <div id="portfolio-emoji">
+        <img src="./GIF/Emoji-Portfolio.gif" class="motion-emoji" alt="Portfoloi emoji"> 
+     </div>
+
+
+     <!-- HEADER TITLE -->
+      <h1 class="solid">Jess<span class="Dev">Dev</span></h1>
+      <div class="container-par">
+        <div class="text-par">Hey I'm Jessica, and I'm a Front-End Engineer</div>
+      </div>
+   <div class="codepen">Currently Frontend<br>Developer at Mindsing</div><div class="codepen">Based in Georgia <br> United States</div>
+      <svg class="distort">
+        <filter id="distortionFilter">
+          <feTurbulence type="fractalNoise" baseFrequency="2.01 .01" numOctaves="5" seed="2" stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%" result="noise"></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"></feDisplacementMap>
+        </filter>
+      </svg>
     </div>
-  </div>
 
-    <div class="fixed-content">
-        <p>Hey I'm Jessica, and I'm a Front-End Engineer</p>
-    </div>
-    </header>
-
-   
 
 
 </div>
@@ -90,35 +86,42 @@
 
 <section id="about">
 
-<!-- PORTFOLIO FACE EMOJI -->
 
-<div id="portfolio-emoji">
-   <img src="./GIF/Emoji-Portfolio.gif" class="motion-emoji" alt="Portfoloi emoji"> 
+<!-- ABOUT ME CONTAINER -->
+<div class="sub-title padding-top-big padding-bottom over-hide">
+  <div class="container">
+    <div class="row">
+      <div class="section-title-wrap">
+        <p class="primary-color-about">about</p>  
+        <h2>jessica pinto<br>"this is me"</h2>
+      </div>
+    </div>  
+  </div>
 </div>
 
 
 
-<!-- ABOUT ME CONTAINER -->
-    <div class="head-about"> 
-        <h1>About Me</h1>
-    </div>
+ 
 
 <div id="about-me">
-   
+
     <div class="container-about">
         <div class="about-h1">
-            <h1><strong>Coder, Programer, Illustrator</strong></h1></div>
         <div class="about-p">
-            <p>Hello, my name is Jessica Pinto. 
-            I'm a certified Front-End-Engineer, and I'm 
-            loving every minute of it! I love to learn and I'm super 
-            passionate about building and solving complex puzzles with code. 
-            Please feel free to reach out, I enjoy chatting with new folks in 
-            the industry and making friends along the way!</p></div>
+            <span>Hello, my name is Jessica Pinto. 
+            I'm a certified Frontend Web Developer, and I'm 
+            loving every minute of it! My enthusiasm for learning 
+            and passion for tackling intricate coding challenges 
+            are what drive me. Don't hesitate to get in touch; 
+            I always relish the opportunity to connect with new people in 
+            the industry and forge new friendships along the way!</span></div>
         
 
     </div>
-
+  
+  <div class="container">
+    <h1 class="heading" data-target-resolver></h1>
+  </div>
 </div>
 
 <div class="linkTo-icons-container">
@@ -131,10 +134,9 @@
 
 </div>
 
-<a href="./PDF/Jessica Pinto RESUME .pdf" class="resume-btn" aria-label="Download my resume button"> 
-    VIEW RESUME
+<a href="./PDF/Jessica Pinto [Resume].pdf" class="resume-btn" aria-label="Download resume"> 
+    Resume
 </a>
-
 
 
 
@@ -145,103 +147,54 @@
 <section id="work" class="sect-2">
 
     <!-- HEADING FOR PROJECTS -->
-    <div class="head-work">
-        <h1>MY WORK</h1>
+    <div class="sub-title padding-top-big padding-bottom over-hide">
+      <div class="container">
+        <div class="row">
+          <div class="section-title-wrap-2">
+            <p class="primary-color-work">work</p>  
+            <h2>code based<br>projects</h2>
+          </div>
+        </div>  
+      </div>
     </div>
 
     <!-- PROJECTS -->
 
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="projects-image-conainer">
-                <a href="https://jfpinto30.github.io/Trend/" class="project-link" aria-label="Get-Trend Project link">
-                    <img src="./Img/Get_trend.jpg" alt="Get Trend link project website" />
-               </a>
-            
-            <div class="projects-info">
-            <h3>Get Trend</h3>
-            <p>Ecommerce project for a custom made fashion company.
-            </p>
-            <span>HTML, CSS, Javascript</span>
-            </div>
-        </div>
-          </div>
+    <div class="work-wrapper">
 
+  <a href="https://jfpinto30.github.io/Trend/" class="box color1 show">
+    <div class="card">
+      <h3 class="heading-work">E-Commerce</h3>
+      <p>Project based on an e-commerce fashion store</p>
+    </div>
+  </a>
 
-          <div class="swiper-slide">
-            <div class="projects-image-conainer">
+  <a href="https://jfpinto30.github.io/LAmountains/" class="box color2">
+    <div class="card">
+      <h3 class="heading-work">Tourism</h3>
+      <p>Static page for contact information &nbsp;&amp;&nbsp; travel</p>
+    </div>
+  </a>
 
-                <a href="https://jfpinto30.github.io/Dark-Roast-Cafe/" class="project-link" aria-label="Dark-Roast-Cafe Project link">
-                    <img src="./Img/dark roast .jpg" alt="Dark-Roast-Cafe link project website" />
-               </a>
-            
-            <div class="projects-info">
-            <h3>Dark Roast Cafe</h3>
-            <p>Ecommerce Website. A coffee shop website project for delivery.
-            </p>
-            <span>HTML, CSS, Javascript</span>
-            </div>
-        </div>
-          </div>
+  <a href="https://jfpinto30.github.io/Let-s-Play/" class="box color3">
+    <div class="card">
+      <h3 class="heading-work">Games</h3>
+      <p>Javascript based project drawing canvas &nbsp;&amp;&nbsp; memory game</p>
+    </div>  </a>
 
-
-          <div class="swiper-slide">
-            <div class="projects-image-conainer">
-
-                <a href="https://jfpinto30.github.io/LAmountains/" class="project-link" aria-label="Dark-Roast-Cafe Project link">
-                    <img src="./Img/LAmountains.jpg" alt="LA mountains link" />
-               </a>
-            
-            <div class="projects-info">
-            <h3>LA Mountains</h3>
-            <p> A tourism Website project. For more information about 
-                hiking, tours, and schedules.
-            </p>
-            <span>HTML, CSS, Javascript</span>
-            </div>
-        </div>
-          </div>
-
-
-
-          <div class="swiper-slide">
-            <div class="projects-image-conainer">
-
-                <a href="https://jfpinto30.github.io/Let-s-Play/" class="project-link" aria-label="Let's play Project link">
-                    <img src="./Img/LetsPlay.jpg" alt="Let's play link project website" />
-               </a>
-            
-            <div class="projects-info">
-            <h3>Let's Play</h3>
-            <p>Interactive games. Fully functional drawing canvas
-                and a Match game with interactive cards to flip over.
-            </p>
-            <span>HTML, CSS, Javascript</span>
-            </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">More coming soon</div>
-
-          <!--
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          -->
-
-        </div>
-      </div>
-
-
-    
-
-
-        
+  <a href="https://jfpinto30.github.io/Dark-Roast-Cafe/" class="box color4">
+    <div class="card">
+      <h3 class="heading-work">Coffee Shop</h3>
+      <p>Small business coffee shop for delivery</p>
+    </div>  </a>
   
-              
+
+
+
+  </div>
+
+        </div>
+      </di>
 
 </section>
 
@@ -250,76 +203,61 @@
 
 <section id="skill" class="sect-3">
 
-    <div class="head-skills"> 
-        <h1>SKILLS</h1>
+  <div class="sub-title padding-top-big padding-bottom over-hide">
+    <div class="container">
+      <div class="row">
+        <div class="section-title-wrap-3">
+          <p class="primary-color-skill">skills</p>  
+          <h2>abilities<br>& knowledge</h2>
+        </div>
+      </div>  
     </div>
-<div class="thermomater-body">
-
-    <div class="thermomater-container">
-
-    <a href="#" class="thermomater" aria-label="Thermamoter liquid animation">
-        <div class="percentage">
-            95% 
-        </div>
-        <div class="liquid reveal"></div>  
-      </a>
-      <div class="info"> 
-        <h3><b>HTML</b></h3>
-        <p>Building a solid <br> foundation.</p> 
-      </div>
-
-</div>
-
-<div class="thermomater-container">
-
-    <a href="#" class="thermomater" aria-label="Thermamoter liquid animation">
-        <div class="percentage">
-            85% 
-        </div>
-        <div class="liquid-1"></div>
-      </a>
-      <div class="info"> 
-        <h3><b>CSS</b></h3>
-        <p>Styling, animation <br> and responsivity.</p> 
-      </div>
-</div>
+  </div>
 
 
-<div class="thermomater-container">
-
-    <a href="#" class="thermomater" aria-label="Thermamoter liquid animation">
-        <div class="percentage">
-            30% 
-        </div>
-        <div class="liquid-2"></div>
-      </a>
-      <div class="info"> 
-        <h3><b>Javascript</b></h3>
-        <p> Functioning and <br> productivity. </p> 
-      </div>
-</div>
-
-<div class="thermomater-container">
-
-    <a href="#" class="thermomater" aria-label="Thermamoter liquid animation">
-        <div class="percentage">
-            25% 
-        </div>
-        <div class="liquid-3"></div>
-     
-      </a>
-      
-      <div class="info"> 
-        <h3><b>React</b></h3>
-        <p>Building, functioning, <br> and styling apps.</p> 
-      </div>
-       </div>
-</div>
+    <div class="colorslide">
+      <ul class="inner">
+        <li>
+          <p data-js="reveal">EXPERT IN HTML</p>
+          <p data-js="reveal">CREATING</p>
+          <p data-js="reveal">HIGHLY OPTIMIZED&nbsp;&amp;&nbsp;PERFORMANT WEB PAGES</p>
+          <p data-js="reveal">DEEP UNDERSTANDING OF WEB STANDARDS,</p>
+          <p data-js="reveal">ACCESSIBILITY&nbsp;&amp;&nbsp;SEO</p>
+          <p data-js="reveal">BUILDING WELL STRUCTURED,SEMANTICS</p>
+          <p data-js="reveal">HTML5 FEATURES&nbsp;&amp;&nbsp;MULTIMEDIA ELEMENTS</p>
+        </li>
+        <li>
+          <p data-js="reveal">EXPERT IN CSS<br>STRONG GRASP ON FUNDAMENTAL CSS PROPERTIES</p>
+          <p data-js="reveal">CSS LAYOUT</p>
+          <p data-js="reveal">USING DIFFERENT POSITIONING TECHNIQUES</p>
+          <p data-js="reveal">CREATING RESPONSIVE LAYOUTS WITH MEDIA QUERIES</p>
+          <p data-js="reveal">EXPERIENCE ON CSS FRAMEWORKS</p>
+          <p data-js="reveal">KNOWLEDGE OF CSS ANIMATIONS &nbsp;&amp;&nbsp; TRANSITIONS</p>
+        </li>
+        <li>
+          <p data-js="reveal">CROSS-BROWSER COMPATIBILITY</p>
+          <p data-js="reveal"> UNDERSTANDING OF VENDOR PREFIXES &nbsp;&amp;&nbsp; FALLBACKS</p>
+          <p data-js="reveal"> TO ENSURE CSS IS FUNCTIONING PROPERLY IN ALL BROWSERS</p>
+        </li>
+        <li>
+          <p data-js="reveal">JAVASCRIPT</p>
+          <p data-js="reveal">STRONG BASIC GRASP OF SYNTAX: VARIABLES,DATA TYPES,<br>OPERATORS, CONTROL STRUCTURES,&nbsp;&amp;&nbsp; FUNCTIONS </p>
+          <p data-js="reveal">EVENT HANDLING</p>
+          <p data-js="reveal">AJAX&nbsp;&amp;&nbsp;FETCH</p>
+          <p data-js="reveal">JAVASCRIPT LIBRARIES: JQUERY&nbsp;&amp;&nbsp;REACT FAMILIAR WITH THEIR SYNTAX &nbsp;&amp;&nbsp; FUNCTIONALITY</p>
+        </li>
+        <li>
+          <p data-js="reveal">DEBUGGING USING DEVTOOLS AND JAVASCRIPT CODE TO TEST &nbsp;&amp;&nbsp; FIX ERRORS</p>
+        </li>
+        <li>
+          <p data-js="reveal">QA TESTING, REGRESSION TESTING</p>
+          <p data-js="reveal">EXPERT IN CMS</p>
+          <p data-js="reveal">DRUPAL9,&nbsp;&amp;&nbsp;WORDPRESS</p>
+        </li>
+        
+      </ul>
+    </div>
   
-       
-  
-      
-    
 
 </section>
 
@@ -336,7 +274,10 @@
 <footer id="contact">
 
 <div class="emoji-container">
+
     <div id="contact-emoji"></div>
+    <h4 class="contact-jess">Jess<span class="Dev">Dev</span></h4>
+
     <div class="contactMe">Contact Me</div>
 </div>
 
@@ -367,67 +308,21 @@
 </footer>
 
 
-    
-    <script src="./JS/mainScript.js"></script>
-    <script src="./JS/email.js"></script>
-    <script src="./JS/navOnScroll.js"></script>
-
-
-
-
-<!-- Swiper JS WORK SECTION -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
-    grabCursor: true,
-  });
-  if (!Event.prototype.path) {
-  Object.defineProperty(Event.prototype, 'path', {
-    get() { return this.composedPath(); }
-  });
-}
-</script>
-
-
-
-
-
-
-<!-- SSL -->
-<!--
-<script type="text/javascript"> //<![CDATA[
-  var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
-  document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
-//]]></script>
-<script language="JavaScript" type="text/javascript">
-  TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_lg_222x54.png", "POSDV", "none");
-</script>
--->
-
-
-
 
 
     
-    <!--SCROLL EFFECT FOR VECTOR PORTFOLIO EMOJI-->
-  <!--
 
-    <script>
-        window.onscroll = function() {scrollFunction()};
+<!-- JS SCRIPTS -->
 
-function scrollFunction() {
-  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
-    document.getElementById("portfolio-emoji").style.width = "100px";
-  } else {
-    document.getElementById("portfolio-emoji").style.width = "150px";
-  }
-}
-    </script>
-   
--->
-    
+<script src="./JS/email.js"></script>
+<script src="./JS/navOnScroll.js"></script>
+<script src="./JS/slider.js"></script>
+<script src="./JS/colorslide.js"></script>
+<script src="./JS/static.js"></script>
+<script src="./JS/gsap.min.js"></script>
+<script src="./JS/nav.js"></script>
+<script src="./JS/textScramble.js"></script>
+<script src="./JS/textReveal.js"></script>
+
 </body>
 </html>

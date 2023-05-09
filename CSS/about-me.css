@@ -1,40 +1,10 @@
-  @media all and (min-width:780px)and (max-width:1400px) {
-    .container-about h1 {
-      font-size: 30px;
-      font-weight: bolder;
-    }
-    .container-about p {
-      font-size: 20px;
-    } 
-    div#portfolio-emoji{
-      width: 200px;
-      height: 200px; 
-      top: 90%;
-    }
-  }
-
-  @media all and (min-width:325px) and (max-width:780px) {
-
-  .container-about h1 {
-    font-size: 20px;
-    font-weight: bolder;
-  }
-  .container-about p {
-    font-size: 15px;
-  }
-  div#portfolio-emoji{
-    width: 180px;
-    height: 180px; 
-    top: 70%;
-  }
-
-  }
+ 
 
 
 /* SECTION 1 ABOUT ME */
 
-section {
-    background-color: #ddebf1;
+#about,#work,#skill {
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,41 +20,11 @@ section {
 
 
 
-#portfolio-emoji {
+#about-me {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border-radius: 100%;
-  position:absolute;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  padding:auto;
-  top:85%;
-  padding: 50px 10px; 
-  /* transition: 0.2s; */ 
-  
-}
-
-.motion-emoji {
-width: 130%;
-}
-
-
-.head-about,.head-work,.head-skills {
-  color: rgba(9, 148, 204, 1);
-  font-family: "Roboto",sans-serif;
-  font-size: 25px;
-  margin:5%;
-  padding: 10px;
- 
-}
-.head-about {
-  margin-top: 15%;
-}
-
-#about-me {
   width: 70%;
   margin-top: 10px;
   padding: 20px;
@@ -96,26 +36,21 @@ width: 130%;
 }
 
 
-.about-h1 h1 {
-  font-family: "Roboto",sans-serif;
-font-size: 35px;
-font-style: normal;
-font-weight: 500;
-line-height: 41px;
-letter-spacing: 0em;
-text-align: center;
-padding: 10px;
+
+.about-h1{
+  text-align: center;
+
 }
 
-.about-p p {
+.about-p span {
   font-family: "Roboto",sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 33px;
   letter-spacing: 0em;
-  text-align: center;
   padding: 10px; 
+  
 }
 
 /* LINK TO ICONS */
@@ -178,21 +113,101 @@ padding: 10px;
   margin:10px;
   margin-bottom: 15%;
   padding: 10px;
-  font-size: 25px;
-  font-family: "Robot",sans-serif;
-  font-weight: 550;
-  letter-spacing: 2px;
   border-radius: 10px;
-  background-color: rgba(9, 148, 204, 1);
-  color: #fff;
-  text-align: center;
+  border:3px solid #FF44CC;
   cursor: pointer;
 }
 .resume-btn, a {
   text-decoration: none;
-  padding-top: 20px;
+  padding-top: 15px;
+  color: #000;
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 2px;
 }
 
 .resume-btn:hover {
-  background-color: rgb(5, 123, 170);
+  background-color: #FF44CC;
+  color: #ffffff;
+
+}
+
+
+
+
+
+
+.sub-title {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.over-hide{
+  overflow: hidden;
+}
+.primary-color-about,.primary-color-work,.primary-color-skill{
+  color: #2BE29C;
+}
+
+.padding-top-bottom-big {
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+.padding-top-big {
+  padding-top: 160px;
+}
+.padding-bottom-big {
+  padding-bottom: 130px;
+}
+.padding-top-bottom {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.padding-top {
+  padding-top: 100px;
+}
+.padding-bottom {
+  padding-bottom: 100px;
+}
+.section-title-wrap p{
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0;
+}
+.section-title-wrap h2{
+  margin: 0;
+  padding: 0;
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.section-title-wrap-2 h2{
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.section-title-wrap-3 h2{
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.section-title-wrap-2 p{
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0;
+}
+.section-title-wrap-3 p{
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0;
 }
