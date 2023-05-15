@@ -52,8 +52,23 @@ footer {
     margin-right:60%;
     border:2px solid #2BE29C;
     border-radius:50% ;
-    
   }
+  @media (max-width: 767px) {
+    #contact-emoji{
+      width: 4rem;
+      height: 4rem;
+      left:20%;
+    }
+  }
+  @media (max-width: 577px) {
+    #contact-emoji{  
+      left:8%;
+    }
+  }
+
+ 
+  
+
   
   .contactMe {
     text-align: center;
@@ -164,8 +179,8 @@ footer {
     font-weight: 500;
 
   }
-  @media (max-width: 800px) {
+  @media (max-width: 767px) {
     .contact-jess {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
