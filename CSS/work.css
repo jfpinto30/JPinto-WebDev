@@ -9,6 +9,14 @@
   width: 100%;
   margin: 10%;
 }
+@media (max-width: 400px) {
+  .section-title-wrap-2 h2{
+    font-size: 3rem;
+  }
+  div.section-title-wrap-2 p{
+    font-size: 1rem;
+  }
+}
 
 .box{
   background-color: var(--clr);
@@ -23,7 +31,6 @@
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   transform: translateX(200%);
   transition: transform 0.6s ease-in-out;
-
 }
 
 @media only screen and (max-width: 767px) {

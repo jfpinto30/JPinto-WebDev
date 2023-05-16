@@ -1,13 +1,4 @@
 
-@media all and (min-width:780px)and (max-width:1400px) {
-
-}
-@media all and (min-width:325px) and (max-width:780px) {
-  
-}
-
-
-
 
 /* SECTION # SKILLS */
 
@@ -23,6 +14,14 @@
     padding: auto;
     top: 0;
     left: 0; 
+  }
+  @media (max-width: 400px) {
+    .section-title-wrap-3 h2{
+      font-size: 3rem;
+    }
+    div.section-title-wrap-3 p{
+      font-size: 1rem;
+    }
   }
   
   
