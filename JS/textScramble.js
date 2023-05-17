@@ -56,7 +56,7 @@ class TextScramble {
   const phrases = [
   'Hi! my name is',
   'Jessica Pinto',
-  'I\'m a Fontend Web Developer',
+  'I\'m a Frontend Web Developer',
   'Welcome to my Portfolio',
   'Check out my Resume',
   'or feel free to contact me below'];
