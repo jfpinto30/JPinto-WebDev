@@ -76,30 +76,15 @@
   width: 100%;
   padding:10px;
   margin:20px;
+  width: 48px;
+  height: 48px;
   transition: all .2s ease-in-out;
 }
 .icon:hover{
   transform: scale(1.1);
 }
 
-#twit {
-  background-image: url(/icons/favicon.ico);
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-}
-#link {
-  background-image: url(/icons/linkedin48.png);
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-}
-#git {
-  background-image: url(/icons/github-48.png);
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-}
+
 
 
 
