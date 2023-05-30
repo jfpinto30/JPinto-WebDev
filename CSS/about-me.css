@@ -82,19 +82,19 @@
   transform: scale(1.1);
 }
 
-#twitter {
+#twit {
   background-image: url(/icons/twitter-48.png);
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
-#linkedin {
+#link {
   background-image: url(/icons/linkedin48.png);
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
-#github {
+#git {
   background-image: url(/icons/github-48.png);
   background-repeat: no-repeat;
   width: 48px;
