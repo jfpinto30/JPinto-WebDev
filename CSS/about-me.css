@@ -34,14 +34,12 @@
 }
 @media (max-width: 400px) {
   div.section-title-wrap h2{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   div.section-title-wrap p{
     font-size: 1rem;
   }
 }
-
-
 
 .about-h1{
   text-align: center;
@@ -68,27 +66,16 @@
   margin: 1rem;
   width: 100%;
 }
-.social-media-icons img{
+.social-media-icons i{
   transition: all .2s ease-in-out;
+  width: 34px;
+  height: 34px;
+  margin-right: 2rem;
 }
-.social-media-icons img:hover{
+.social-media-icons i:hover{
   transform: scale(1.1);
 }
-.twitter-icon img{
-  width: 32px;
-  height: 32px;
-  margin-right: 2rem;
-}
-.linkedin-icon img{
-  width: 32px;
-  height: 32px;
-  margin-right: 2rem;
 
-}
-.github-icon img{
-  width: 32px;
-  height: 32px;
-}
 
 
 /* RESUME BUTTON */
