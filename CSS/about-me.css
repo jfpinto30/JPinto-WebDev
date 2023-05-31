@@ -60,19 +60,15 @@
 /*SOCIAL MEDIA ICONS*/
 
 .social-media-icons{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.social-media-icons i{
+.social-media-icons a{
   transition: all .2s ease-in-out;
-  width: 34px;
-  height: 34px;
-  margin-right: 2rem;
+  margin: 2rem;
 }
-.social-media-icons i:hover{
+.social-media-icons a:hover{
   transform: scale(1.1);
 }
 
