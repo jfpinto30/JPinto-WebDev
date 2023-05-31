@@ -31,8 +31,6 @@
   color: rgba(63, 63, 63, 1);
   letter-spacing: 1px;
   padding: 7px;  
-
-  
 }
 @media (max-width: 400px) {
   div.section-title-wrap h2{
@@ -47,7 +45,6 @@
 
 .about-h1{
   text-align: center;
-
 }
 
 .about-p span {
@@ -58,39 +55,43 @@
   line-height: 33px;
   letter-spacing: 0em;
   padding: 10px; 
-  
 }
 
-/* LINK TO ICONS */
-.linkTo-icons-container {
+
+
+/*SOCIAL MEDIA ICONS*/
+
+.social-media-icons{
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 1rem;
   width: 100%;
-  height: 90px;
-  margin-top: 10px;
-  
 }
-
-.icon {
-  width: 100%;
-  padding:10px;
-  margin:20px;
-  width: 48px;
-  height: 48px;
+.social-media-icons img{
   transition: all .2s ease-in-out;
 }
-.icon:hover{
+.social-media-icons img:hover{
   transform: scale(1.1);
 }
+.twitter-icon img{
+  width: 32px;
+  height: 32px;
+  margin-right: 2rem;
+}
+.linkedin-icon img{
+  width: 32px;
+  height: 32px;
+  margin-right: 2rem;
 
-
-
+}
+.github-icon img{
+  width: 32px;
+  height: 32px;
+}
 
 
 /* RESUME BUTTON */
-
-
 .resume-btn {
   width: 250px;
   height: 70px;
@@ -103,6 +104,7 @@
   border:3px solid #FF44CC;
   cursor: pointer;
 }
+
 .resume-btn, a {
   text-decoration: none;
   padding-top: 15px;
@@ -124,7 +126,7 @@
 
 
 
-
+/* HEADING */
 .sub-title {
   position: relative;
   width: 100%;
@@ -195,4 +197,37 @@
   font-size: 22px;
   font-weight: 500;
   padding: 0;
+}
+
+
+
+/*SOCIAL MEDIA ICONS*/
+
+.social-media-icons{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 100%;
+}
+.social-media-icons img{
+  transition: all .2s ease-in-out;
+}
+.social-media-icons img:hover{
+  transform: scale(1.1);
+}
+.twitter-icon img{
+  width: 32px;
+  height: 32px;
+  margin-right: 2rem;
+}
+.linkedin-icon img{
+  width: 32px;
+  height: 32px;
+  margin-right: 2rem;
+
+}
+.github-icon img{
+  width: 32px;
+  height: 32px;
 }
