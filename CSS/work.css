@@ -64,6 +64,9 @@
 .color4 {
   border: 5px solid #007fff;
 }
+.color5 {
+  border: 5px solid #0e0e0e;
+}
 
 .card{
   display: flex;
