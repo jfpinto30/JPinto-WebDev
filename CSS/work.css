@@ -12,9 +12,11 @@
 @media (max-width: 400px) {
   .section-title-wrap-2 h2{
     font-size: 3rem;
+        text-align: center;
   }
   div.section-title-wrap-2 p{
     font-size: 1rem;
+        text-align: center;
   }
 }
 
