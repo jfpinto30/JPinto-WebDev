@@ -54,6 +54,11 @@
   letter-spacing: 0em;
   padding: 10px; 
 }
+@media (max-width: 1800px) {
+.about-p span{
+  font-size: 20px;
+}
+}
 
 
 
