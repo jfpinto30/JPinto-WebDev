@@ -5,12 +5,13 @@ var toggle = false;
 
 tl.to(".activator", {
   background: "#2BE29C",
-  borderRadius: "5em 5em 0 0"
+  borderRadius: "5em 5em 5em 5em"
 });
 tl.to(
   ".navIconList",
   {
-    clipPath: "ellipse(100% 100% at 50% 50%)"
+    clipPath: "ellipse(100% 100% at 50% 50%)",
+    borderRadius: "5em 5em 5em 5em"
   },
   "-=.5"
 );

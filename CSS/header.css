@@ -63,7 +63,7 @@ svg {
   pointer-events: none;
 }
 
-#banner {
+#home {
   height: 100vh;
   display: flex;
   flex-direction: column;
