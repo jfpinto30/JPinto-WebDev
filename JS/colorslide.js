@@ -1,4 +1,4 @@
-const COLOR_LIST = ["#0e0e0e", "#dddddd", "#2BE29C", "#007fff", "#FF44CC"];
+const COLOR_LIST = ["#0e0e0e", "#dddddd", "#2BE29C", "#2BE29C", "#0e0e0e"];
 let $targetList;
 
 const init = () => {

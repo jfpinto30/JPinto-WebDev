@@ -57,18 +57,14 @@
 .color1 {
    border:5px solid #dddddd;
 }
-.color2 {
+
+.color3 {
   border:5px solid #2BE29C;
 }
-.color3 {
-  border:5px solid #FF44CC;
-}
 .color4 {
-  border: 5px solid #007fff;
-}
-.color5 {
   border: 5px solid #0e0e0e;
 }
+
 
 .card{
   display: flex;

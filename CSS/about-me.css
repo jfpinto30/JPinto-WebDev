@@ -96,7 +96,7 @@
   margin-bottom: 15%;
   padding: 10px;
   border-radius: 10px;
-  border:3px solid #FF44CC;
+  border:3px solid #2BE29C;
   cursor: pointer;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .resume-btn:hover {
-  background-color: #FF44CC;
+  background-color: #2BE29C;
   color: #ffffff;
 
 }
